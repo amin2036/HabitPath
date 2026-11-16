@@ -4,7 +4,7 @@
 <p align="center"><b>ছোট ছোট দিনে বড় পরিবর্তন</b><br>ভালো অভ্যাস গড়ার আর খারাপ অভ্যাস ছাড়ার বিনামূল্যের Android অ্যাপ</p>
 
 <p align="center">
-  <a href="https://github.com/amin2036/HabitPath/releases/latest/download/HabitPath.apk"><b>📥 এখানে চাপুন: HabitPath ডাউনলোড করুন (Android)</b></a>
+  <a href="https://github.com/amin2036/HabitPath/raw/main/HabitPath.apk"><b>📥 এখানে চাপুন: HabitPath ডাউনলোড করুন (Android)</b></a>
 </p>
 
 ---
@@ -43,7 +43,12 @@
 
 **নতুন সংস্করণ:** একই লিংক থেকে নামিয়ে আগেরটার উপরেই ইনস্টল করুন। আপনার হিসাব মুছবে না।
 
-সব সংস্করণ আর কী কী বদলেছে: [Releases](https://github.com/amin2036/HabitPath/releases)
+**বর্তমান সংস্করণ: ০.৫.০**
+- নতুন রঙিন আইকন আর প্রতিটি অংশের আলাদা ছবি
+- পাহাড়ে ওঠার অগ্রগতি: যত দিন এগোবেন, যাত্রী তত চূড়ার দিকে উঠবে
+- প্রতিদিন সকালে একটি সত্য গল্প (৭৪টি গল্প, শিক্ষা আর সূত্রসহ)
+- ৩,০০০+ প্রেরণার লেখা, একই লেখা বারবার আসে না
+- লম্বা লাইন এখন নোটিফিকেশনে পুরোটা দেখা যায়
 
 ---
 
@@ -51,4 +56,4 @@
 
 **HabitPath** is a free Android app for building good habits and breaking bad ones, in Bengali and English. Track any habit for 21, 41, 66 or 365 days, get reminders with your own lines or 3,000+ motivational messages that never repeat, read a true story every morning, and watch a hiker climb towards the summit as your days add up. Quran and Hadith content is optional and every item cites its source. Works offline, no ads, and all your data stays on your phone.
 
-**[Download the latest APK](https://github.com/amin2036/HabitPath/releases/latest/download/HabitPath.apk)** · Android 7.0 or later. During install, tap **Install anyway** if Play Protect shows a warning.
+**[Download the latest APK](https://github.com/amin2036/HabitPath/raw/main/HabitPath.apk)** · Android 7.0 or later. During install, tap **Install anyway** if Play Protect shows a warning.
