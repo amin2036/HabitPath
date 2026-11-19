@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anaqia Logo Concepts</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:#07071a; color:#eef0ff; font-family:Poppins,"Hind Siliguri",sans-serif; padding:32px 16px 56px; }
+  .wrap { max-width:1180px; margin:0 auto; }
+  h1 { text-align:center; font-size:clamp(24px,4vw,34px); font-weight:700; }
+  .sub { text-align:center; color:#a3a6c9; margin:8px 0 32px; font-family:"Hind Siliguri",sans-serif; font-size:17px; }
+  .opt { background:linear-gradient(160deg,#12123a,#0a0a22); border:1px solid rgba(255,255,255,.08); border-radius:26px; padding:24px; margin-bottom:32px; }
+  .head { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .num { width:38px; height:38px; border-radius:12px; display:grid; place-items:center; color:#fff; font-weight:700; background:linear-gradient(135deg,#8B5CF6,#FF5C8A); }
+  .head h2 { font-size:21px; font-family:"Hind Siliguri",Poppins,sans-serif; }
+  .head span { color:#a3a6c9; font-size:13.5px; font-family:"Hind Siliguri",Poppins,sans-serif; }
+  .row { display:grid; grid-template-columns:1fr 1.5fr; gap:16px; }
+  @media (max-width:820px){ .row{grid-template-columns:1fr;} }
+  .tile { border-radius:20px; background:radial-gradient(circle at 50% 40%, rgba(139,92,246,.28), transparent 60%), #0b0b22; border:1px solid rgba(255,255,255,.07);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; padding:28px 16px; min-height:330px; }
+  .tile svg.big { width:150px; height:150px; filter:drop-shadow(0 10px 30px rgba(160,90,255,.45)); }
+  .word { font-weight:600; font-size:42px; letter-spacing:-1px; line-height:1; }
+  .word .g { background:linear-gradient(90deg,#a78bfa,#ff6b9a); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .tag { font-size:9.5px; letter-spacing:4px; text-transform:uppercase; color:#b7a9f5; }
+  .lighticons { display:flex; gap:12px; margin-top:12px; align-items:center; }
+  .chip { background:#f4f2fb; border-radius:12px; padding:8px 12px; display:flex; align-items:center; gap:6px; color:#1b1636; font-weight:600; font-size:16px; }
+  .app { width:50px; height:50px; border-radius:14px; background:linear-gradient(145deg,#1d1650,#0b0b22); display:grid; place-items:center; border:1px solid rgba(255,255,255,.12); }
+
+  /* website mock */
+  .site { border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,.1); background:#0b0b1e; }
+  .nav { display:flex; align-items:center; gap:12px; padding:12px 16px; border-bottom:1px solid rgba(255,255,255,.07); }
+  .brand { display:flex; align-items:center; gap:8px; font-weight:600; font-size:20px; }
+  .search { flex:1; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:999px; padding:7px 14px; font-size:12px; color:#9aa0c3; font-family:"Hind Siliguri",Poppins; }
+  .pill { font-size:11px; border:1px solid rgba(255,255,255,.15); border-radius:999px; padding:4px 10px; }
+  .pill.on { background:linear-gradient(135deg,#8B5CF6,#FF5C8A); border:0; }
+  @media (max-width:560px){ .search{display:none;} }
+  .hero { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:22px 18px; align-items:center; }
+  .hero h3 { font-size:30px; line-height:1.1; font-weight:800; }
+  .hero p { color:#9aa0c3; font-size:12.5px; margin:10px 0 14px; font-family:"Hind Siliguri",Poppins; }
+  .btn { display:inline-block; background:linear-gradient(135deg,#8B5CF6,#FF5C8A); padding:8px 16px; border-radius:10px; font-weight:600; font-size:12px; }
+  .stage { aspect-ratio:1.3; border-radius:16px; display:grid; place-items:center; background:radial-gradient(circle at 50% 70%, rgba(139,92,246,.45), transparent 60%), #10103a; border:1px solid rgba(255,255,255,.08); }
+  .stage svg { width:62%; height:auto; }
+  .cats { display:flex; gap:8px; padding:0 18px 18px; flex-wrap:wrap; }
+  .cat { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:7px 12px; font-size:11px; }
+  .foot { text-align:center; color:#a3a6c9; font-family:"Hind Siliguri",sans-serif; font-size:15px; }
+</style>
+</head>
+<body>
+<!-- Icon symbols -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#ff5c8a"/></linearGradient>
+    <linearGradient id="gpv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#a78bfa" stop-opacity=".55"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".6" stop-color="#d946ef"/><stop offset="1" stop-color="#ff6b8a"/></linearGradient>
+
+    <!-- 1. Hologram portal A -->
+    <g id="i1">
+      <path d="M26 96 L44 26 H76 L94 96 Z" fill="url(#beam)"/>
+      <ellipse cx="60" cy="98" rx="42" ry="10" fill="none" stroke="url(#gp)" stroke-width="4"/>
+      <ellipse cx="60" cy="98" rx="28" ry="5.5" fill="none" stroke="#ff8fb1" stroke-width="2" opacity=".7"/>
+      <path d="M51 36 C51 18 69 18 69 36" fill="none" stroke="url(#gpv)" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M40 90 L60 34 L80 90" fill="none" stroke="url(#gpv)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M50 70 H70" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      <rect x="10" y="38" width="16" height="16" rx="4" fill="rgba(167,139,250,.18)" stroke="#a78bfa" stroke-width="2"/>
+      <rect x="94" y="28" width="16" height="16" rx="4" fill="rgba(255,92,138,.18)" stroke="#ff5c8a" stroke-width="2"/>
+      <rect x="98" y="60" width="12" height="12" rx="3" fill="rgba(167,139,250,.18)" stroke="#c4b5fd" stroke-width="2"/>
+      <rect x="8" y="66" width="12" height="12" rx="3" fill="rgba(255,92,138,.18)" stroke="#ff8fb1" stroke-width="2"/>
+      <path d="M18 46 l-3 0 M18 46 l0 -3" stroke="none"/>
+      <circle cx="18" cy="46" r="2.5" fill="#c4b5fd"/>
+      <path d="M102 36 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0" fill="#ff8fb1"/>
+    </g>
+
+    <!-- 2. Screen bag with category grid -->
+    <g id="i2">
+      <path d="M44 32 V26 a16 16 0 0 1 32 0 V32" fill="none" stroke="url(#gp)" stroke-width="6.5" stroke-linecap="round"/>
+      <rect x="16" y="30" width="88" height="80" rx="20" fill="url(#gp)"/>
+      <rect x="25" y="39" width="70" height="62" rx="11" fill="#140f36"/>
+      <circle cx="33" cy="46" r="2.3" fill="#ff5c8a"/><circle cx="40" cy="46" r="2.3" fill="#fbbf24"/><circle cx="47" cy="46" r="2.3" fill="#34d399"/>
+      <rect x="31" y="53" width="27" height="20" rx="5" fill="#2a2266"/>
+      <rect x="62" y="53" width="27" height="20" rx="5" fill="#2a2266"/>
+      <rect x="31" y="76" width="27" height="20" rx="5" fill="#2a2266"/>
+      <rect x="62" y="76" width="27" height="20" rx="5" fill="#2a2266"/>
+      <!-- shirt -->
+      <path d="M39 58 l4-2 h5 l4 2 l2 4 -3 1.5 v6 h-11 v-6 l-3 -1.5z" fill="#c4b5fd"/>
+      <!-- headphones -->
+      <path d="M68 68 v-3 a7.5 7.5 0 0 1 15 0 v3" fill="none" stroke="#ff8fb1" stroke-width="2.6" stroke-linecap="round"/>
+      <rect x="66.5" y="65" width="4" height="6" rx="1.5" fill="#ff8fb1"/><rect x="79.5" y="65" width="4" height="6" rx="1.5" fill="#ff8fb1"/>
+      <!-- lipstick -->
+      <rect x="41" y="86" width="9" height="7" rx="1.5" fill="#fbbf24"/><path d="M42.5 86 v-5 l6 -3 v8z" fill="#ff5c8a"/>
+      <!-- heart -->
+      <path d="M75.5 93 c-6-4.2-8-6.8-8-9.4 a3.7 3.7 0 0 1 8-1.4 a3.7 3.7 0 0 1 8 1.4 c0 2.6-2 5.2-8 9.4z" fill="#a78bfa"/>
+    </g>
+
+    <!-- 3. Orbit world -->
+    <g id="i3">
+      <ellipse cx="60" cy="60" rx="54" ry="20" fill="none" stroke="url(#gp)" stroke-width="3" opacity=".45" transform="rotate(-22 60 60)"/>
+      <circle cx="60" cy="60" r="32" fill="url(#planet)"/>
+      <ellipse cx="50" cy="46" rx="14" ry="7" fill="#fff" opacity=".16" transform="rotate(-30 50 46)"/>
+      <path d="M60 60 m0 0" />
+      <path d="M8 60 a52 18 0 0 0 104 0" fill="none" stroke="url(#gp)" stroke-width="3.4" transform="rotate(-22 60 60)"/>
+      <text x="60" y="73" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="40" fill="#fff">a</text>
+      <!-- satellites -->
+      <g transform="translate(96 30)"><rect x="-9" y="-6" width="18" height="15" rx="4" fill="#ff5c8a"/><path d="M-4 -6 v-2 a4 4 0 0 1 8 0 v2" fill="none" stroke="#ff5c8a" stroke-width="2.2"/></g>
+      <path d="M22 98 c-5-3.6-7-5.8-7-8 a3.3 3.3 0 0 1 7-1.2 a3.3 3.3 0 0 1 7 1.2 c0 2.2-2 4.4-7 8z" fill="#c4b5fd"/>
+      <path d="M17 34 l1.8 4.8 4.8 1.8-4.8 1.8-1.8 4.8-1.8-4.8-4.8-1.8 4.8-1.8z" fill="#fbbf24"/>
+      <circle cx="104" cy="82" r="4" fill="#a78bfa"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Anaqia: ওয়েবসাইটের ছবি ফুটে ওঠা তিনটি লোগো</h1>
+  <p class="sub">প্রতিটি লোগোর ভেতরেই Anaqia ওয়েবসাইটের ভাবনা আছে। ডান পাশে লোগোটি ওয়েবসাইটের হেডার আর হিরো সেকশনে বসিয়ে দেখানো হয়েছে।</p>
+  <div id="list"></div>
+  <p class="foot">পছন্দের লোগোর নম্বর জানান (১, ২ বা ৩)। চাইলে পরিবর্তনও বলতে পারেন।</p>
+</div>
+
+<script>
+const opts = [
+  { id:"i1", t:"হলোগ্রাম পোর্টাল \"A\"", d:"আলো জ্বলা হলোগ্রাম প্ল্যাটফর্মে দাঁড়ানো ব্যাগ-হাতলসহ \"A\", চারপাশে ভাসমান প্রোডাক্ট কার্ড। ওয়েবসাইটের ফিউচারিস্টিক হিরো সেকশনের প্রতিচ্ছবি।" },
+  { id:"i2", t:"শপিং ব্যাগ-স্ক্রিন", d:"ব্যাগের ভেতরে একটি অনলাইন স্টোরের স্ক্রিন, তাতে ফ্যাশন, অডিও, বিউটি আর পছন্দের পণ্যের ক্যাটাগরি গ্রিড। অনলাইনে সব কিছু এক ব্যাগে।" },
+  { id:"i3", t:"শপিং ওয়ার্ল্ড অরবিট", d:"\"a\" লেখা একটি গ্রহ, যার কক্ষপথে ঘুরছে ব্যাগ, হার্ট আর তারা। Anaqia মানে পছন্দের সব জিনিসের এক দুনিয়া।" },
+];
+const ic = (id,s) => `<svg ${s} viewBox="0 0 120 120"><use href="#${id}"/></svg>`;
+document.getElementById("list").innerHTML = opts.map((o,i)=>`
+<section class="opt">
+  <div class="head"><div class="num">${i+1}</div><div><h2>${o.t}</h2><span>${o.d}</span></div></div>
+  <div class="row">
+    <div class="tile">
+      ${ic(o.id,'class="big"')}
+      <div class="word">ana<span class="g">qia</span></div>
+      <div class="tag">Everything You Love</div>
+      <div class="lighticons">
+        <div class="chip">${ic(o.id,'width="26" height="26"')}anaqia</div>
+        <div class="app">${ic(o.id,'width="36" height="36"')}</div>
+      </div>
+    </div>
+    <div class="site">
+      <div class="nav">
+        <div class="brand">${ic(o.id,'width="34" height="34"')}<span>ana<span style="background:linear-gradient(90deg,#a78bfa,#ff6b9a);-webkit-background-clip:text;background-clip:text;color:transparent">qia</span></span></div>
+        <div class="search">🔍 পণ্য, ব্র্যান্ড খুঁজুন...</div>
+        <span class="pill on">বাং</span><span class="pill">EN</span><span style="font-size:18px">🛍️</span>
+      </div>
+      <div class="hero">
+        <div>
+          <h3>Everything<br>You <span style="background:linear-gradient(90deg,#a78bfa,#ff6b9a);-webkit-background-clip:text;background-clip:text;color:transparent">Love.</span></h3>
+          <p>ফ্যাশন, ইলেকট্রনিক্স, বিউটি, হোম, সবকিছু এক জায়গায়। সারা বাংলাদেশে দ্রুত ডেলিভারি।</p>
+          <span class="btn">Shop Now →</span>
+        </div>
+        <div class="stage">${ic(o.id,'')}</div>
+      </div>
+      <div class="cats"><span class="cat">👗 Fashion</span><span class="cat">📱 Electronics</span><span class="cat">💄 Beauty</span><span class="cat">🛋️ Home</span><span class="cat">⚽ Sports</span></div>
+    </div>
+  </div>
+</section>`).join("");
+</script>
+</body>
+</html>
